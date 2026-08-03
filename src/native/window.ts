@@ -200,8 +200,6 @@ export function createMainWindow() {
         .then((sources) => {
           // Shortcut for linux wayland.
           if (sources.length == 1) {
-            // TODO: Get audio to work with wayland
-            // See vencord for an implementation using a virtual microphone.
             request.audioRequested
               ? callback({
                   video: sources[0],
