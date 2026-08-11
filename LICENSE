@@ -1,3 +1,12 @@
+Stoat Enhanced
+Copyright (C) 2026 djell1l
+
+This project is a modified client based on Stoat
+(https://github.com/stoatchat/for-desktop), Copyright (C) Stoat Chat
+and contributors, licensed under the GNU Affero General Public
+License v3.0. Modifications and additions (plugin system, themes,
+rich presence, and related code) are Copyright (C) 2026 djell1l,
+also licensed under AGPLv3.
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
@@ -659,3 +668,4 @@ specific requirements.
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU AGPL, see
 <https://www.gnu.org/licenses/>.
+
