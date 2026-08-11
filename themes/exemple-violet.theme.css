@@ -1,0 +1,34 @@
+/**
+ * @name Violet Néon
+ * @author StoatModded
+ * @description Un thème sombre avec des accents violets, exemple de démarrage
+ * @version 1.0.0
+ */
+
+/* Exemple simple : recolore les liens et éléments interactifs.
+   Comme on a vu que les vraies classes CSS de Stoat sont générées
+   (Panda CSS, hashées à chaque build), un thème robuste doit cibler
+   des propriétés visuelles générales (couleurs de fond, texte) plutôt
+   que des sélecteurs de classe précis qui casseraient au moindre update
+   de Stoat. */
+
+::selection {
+  background: #a78bfa66;
+}
+
+a {
+  color: #c4b5fd !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c3aed88;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aedcc;
+}

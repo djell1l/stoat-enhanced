@@ -1,0 +1,51 @@
+/**
+ * @name Test Rapide
+ * @author Toi
+ * @description Thème de test très visible pour confirmer que l'injection fonctionne
+ * @version 1.0.0
+ */
+
+/* Volontairement voyant et facile à repérer d'un coup d'oeil,
+   pour valider rapidement que le système marche avant de peaufiner
+   un vrai thème plus subtil. */
+
+body {
+  background: #0a0015 !important;
+}
+
+* {
+  border-color: #ff2ea6 !important;
+}
+
+::selection {
+  background: #ff2ea688;
+}
+
+a {
+  color: #39ff14 !important;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff2ea6;
+  border-radius: 8px;
+  border: 3px solid #0a0015;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #39ff14;
+}
+
+/* Un liseré arc-en-ciel en haut, bien visible, façon confirmation */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #ff2ea6, #ff9f2e, #39ff14, #2ecbff, #9d2eff);
+  z-index: 999999;
+  pointer-events: none;
+}
