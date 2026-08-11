@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="120" alt="Stoat Enhanced logo"></p>
+
 # Stoat Modded — squelette de l'injecteur
 
 Fork de `stoatchat/for-desktop` avec un système de plugins injecté au niveau
@@ -82,3 +84,4 @@ officielle.
 - Chaque plugin ne fait, pour l'instant, qu'injecter du CSS scoppé (`ctx.injectCSS`).
   On étoffera l'API (accès à des metadata custom, hooks réseau, etc.) au fur
   et à mesure des besoins des prochains plugins.
+
