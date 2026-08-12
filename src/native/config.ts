@@ -58,7 +58,7 @@ const store = new Store({
     minimiseToTray: true,
     startMinimisedToTray: false,
     spellchecker: true,
-    hardwareAcceleration: true,
+    hardwareAcceleration: false, // StoatModded: disabled by default due to gray-screen bug on some Windows configs
     discordRpc: true,
     windowState: {
       x: 0,
@@ -217,3 +217,4 @@ ipcMain.on("config", (_, newConfig: Partial<DesktopConfig>) => {
     ([key, value]) => (config[key as keyof DesktopConfig] = value as never),
   );
 });
+
