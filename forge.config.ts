@@ -13,10 +13,10 @@ import { FuseV1Options, FuseVersion } from "@electron/fuses";
 // import { globSync } from "node:fs";
 
 const STRINGS = {
-  author: "Revolt Platforms LTD",
-  name: "Stoat",
-  execName: "stoat-desktop",
-  description: "Open source user-first chat platform.",
+  author: "djell1l (based on Stoat by Revolt Platforms LTD)",
+  name: "Stoat Enhanced",
+  execName: "stoat-enhanced",
+  description: "Stoat, enhanced with themes, rich presence, and more.",
 };
 
 const ASSET_DIR = "assets/desktop";
@@ -35,7 +35,7 @@ const makers: ForgeConfig["makers"] = [
     description: STRINGS.description,
     exe: `${STRINGS.execName}.exe`,
     setupExe: `${STRINGS.execName}-setup.exe`,
-    copyright: "Copyright (C) 2025 Revolt Platforms LTD",
+    copyright: "Copyright (C) 2026 djell1l, based on Stoat by Revolt Platforms LTD",
   }),
   new MakerZIP({}),
   new MakerFlatpak({
@@ -174,3 +174,4 @@ const config: ForgeConfig = {
 };
 
 export default config;
+

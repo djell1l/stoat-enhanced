@@ -3,7 +3,7 @@ import AutoLaunch from "auto-launch";
 import { ipcMain } from "electron";
 
 export const autoLaunch = new AutoLaunch({
-  name: "Stoat",
+  name: "Stoat Enhanced",
 });
 
 ipcMain.handle("getAutostart", async () => {
@@ -23,3 +23,4 @@ ipcMain.handle("setAutostart", async (_event, state: boolean) => {
   const enabled = await autoLaunch.isEnabled();
   return enabled;
 });
+
